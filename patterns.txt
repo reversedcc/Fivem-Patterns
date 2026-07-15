@@ -1,159 +1,34 @@
-World:
-48 8B 05 ? ? ? ? 33 D2 48 8B 40 08 8A CA 48 85 C0 74 16 48 8B
-| 48 8B 05 ? ? ? ? 33 D2 48 8B 40 08 8A CA 48 85 C0 74 16 48 8B
- 
-ViewPort:
-48 8B 15 ?? ?? ?? ?? 48 8D 2D ?? ?? ?? ?? 48 8B CD
-| 48 8B 15 ? ? ? ? 48 8D 2D ? ? ? ? 48 8B CD
- 
-Camera:
-48 8B 05 ? ? ? ? 48 8B 98 ? ? ? ? EB
-| —
- 
-ReplayInterface:
-48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? 48 8D 4C 24 ?? E8 ?? ?? ?? ?? 48 8D 4C 24 ?? E8 ?? ?? ?? ?? 48 8B 9C 24
-| 48 8B 05 ?? ?? ?? ?? 66 89 0D ?? ?? ?? ?? 4C 89 2C D0
- 
-SwapChain:
-48 8B 0D ? ? ? ? 48 8B 01 44 8D 43 01 33 D2 FF 50 40 8B C8
-| —
- 
-PointerToHandle:
-48 89 5C 24 ? 48 89 74 24 ? 57 48 83 EC 20 8B 15 ? ? ? ? 48 8B F9 48 83 C1 10 33 DB
-| —
- 
-Triggerbot:
-48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? 48 8B 0D ?? ?? ?? ?? 48 85 C9 74 05 E8 ?? ?? ?? ?? 8A CB
-| —
- 
-BoneMask:
-48 89 5C 24 ?? 48 89 6C 24 ?? 48 89 74 24 ?? 57 48 83 EC 60 48 8B 01 41 8B E8 48 8B F2 48 8B F9 33 DB
-| —
- 
-PlayerInfo:
-48 8B 80 ? ? ? ? 48 85 C0 74 ? 39 90
-| —
- 
-Handling:
-48 8B 83 ? ? ? ? 8B D5 48 89 44 24 ? 4C 89 74 24
-| —
- 
-Recoil:
-F3 0F 10 B0 ? ? ? ? 49 8B 87
-| —
- 
-NoSpread:
-F3 41 0F 10 B0 ? ? ? ? 48 8B CA
-| —
- 
-WeaponManager:
-48 8B 88 ? ? ? ? 48 83 79 ? ? 74 ? 45 33 C9
-| 0F 84 ? ? ? ? 48 8B 8F ? ? ? ? E8 ? ? ? ? 48 8B F0
- 
-VehicleManager:
-D0 FA 25 ? ? ? ? 00 00 00 00 00 6B
-| —
- 
-EntityType:
-8B 82 ? ? ? ? C1 E0 ? C1 F8 ? 41 2B C4
-| —
- 
-Health:
-48 8B 82 ? ? ? ? F3 0F 10 83 ? ? ? ?
-| —
- 
-WeaponDamageModifier:
-F3 0F 10 88 ? ? ? ? EB ? 41 0F 28 CA
-| —
- 
-WeaponDefenseModifier:
-F3 0F 11 80 ? ? ? ? F3 0F 10 87 ? ? ? ? 48
-| —
- 
-WeaponDefenseModifier2:
-F3 0F 11 ? ? ? ? ? 8A 87 ? ? ? ? C0 E0
-| —
- 
-VehicleDamageModifier:
-74 ? 48 8B 80 ? ? ? ? F3 44 0F 59 88
-| —
- 
-VehicleDefenseModifier:
-F6 C1 ? 75 ? 48 8B 83 ? ? ? ? 48 8B 4E
-| —
- 
-MeleeWeaponDamageModifier:
-48 8B 85 ? ? ? ? 0F 2F CE 77 ? 0F 28 CE 49
-| —
- 
-MeleeWeaponDefenseModifier:
-45 84 ? ? 74 ? 48 8B 83
-| —
- 
-PlayerStamina:
-F3 0F 58 F2 0F 2F F0 F3 0F
-| —
- 
-GetGameplayCamRot:
-? ? ? ? 8B DA 48 8B F9 E8 ? ? ? ? 48 8D 4C 24 ? 48 8D 90
-| 48 89 5C 24 08 57 48 83 EC 30 8B DA 48 8B F9 E8 ? ? ? ?
- 
-GetFinalRenderedCamRot:
-48 89 5C 24 08 57 48 83 EC 30 8B DA 48 8B F9 E8 ? ? ? ? 48 8D 4C 24 20 44 8B C3 48 8B D0
-| —
- 
-GetGameplayCamCoord:
-40 53 48 83 EC ?? 48 8B D9 E8 ?? ?? ?? ?? 8B 90
-| 48 89 5C 24 F8 48 8D 64 24 F8 48 83 EC 60
- 
-GetPedBoneIndex:
-48 89 5C 24 ? 57 48 83 EC ? 8B FA 83 CB
-| —
- 
-CreateObject:
-4C 8B DC 48 83 EC ? 8A 84 24 ? ? ? ? F3 0F 10 5A ? F3 0F 10 52 ?
-| —
- 
-AttachEntityToEntity:
-48 8B C4 48 89 58 ? 48 89 68 ? 48 89 70 ? 57 41 54 41 55 41 56 41 57 48 83 EC ? 0F 29 70 ?
-| —
- 
-HasEntityClearLosToEntity:
-57 48 83 EC 60 48 8B 01 41 8B E8 48 8B F2 48 8B F9 33 DB
-| 48 8B C4 48 89 58 ? 48 89 70 ? 48 89 78 ? 4C 89 70 ? 55 48 8D A8 ? ? ? ?
- 
-ClearPedTasks:
-40 53 48 83 EC 30 E8 ?? ?? ?? ?? 48 8B D8 48 85 C0 0F 84
-| —
- 
-SetCurrentPedWeapon:
-48 89 5C 24 ? 48 89 74 24 ? 57 48 83 EC ? 41 8A F0 8B FA E8 ? ? ? ? 48 8B D8
-| —
- 
-ExplodeVehicle:
-48 8B 41 ? 83 78 ? ? 8B 08 0F 95 C2 83 78 ? ? 41 0F 95 C0 E9 ? ? ? ?
-| —
- 
-AddWeapon:
-48 8B C4 55 56 57 41 54 41 55 41 56 41 57 48 8D 68 90
-| 48 89 5C 24 ? 48 89 6C 24 ? 48 89 74 24 ? 57 48 83 EC ?
- 
-CreateVehicle:
-48 89 5C 24 ? 55 56 57 41 54 41 55 41 56 41 57 48 8B EC 48 83 EC 50
-| —
- 
-BlipList:
-4C 8D 05 ? ? ? ? 0F B7 C1
-| —
- 
-CamGameplayDirector:
-4C 8B 35 ? ? ? ? 33 FF 32 DB
-| —
- 
-Room:
-48 8B 05 ? ? ? ? 38 98 ? ? ? ? 8A C3
-| —
- 
-BulletInstance:
-F3 41 0F 10 19 F3 41 0F 10 41 04
-| —
+World = 48 8B 05 ? ? ? ? 33 D2 48 8B 40 08 8A CA 48 85 C0 74 16 48 8B
+ReplayInterFace = 48 8D 0D ? ? ? ? 48 ? ? E8 ? ? ? ? 48 8D 0D ? ? ? ? 8A D8 E8 ? ? ? ? 84 DB 75 13 48 8D 0D ? ? ? ? 48 8B D7 E8 ? ? ? ? 84 C0 74 BC 8B 8F
+ViewPort = 48 8B 15 ? ? ? ? 48 8D 2D ? ? ? ? 48 8B CD
+Camera = 48 8B 05 ? ? ? ? 38 98 ? ? ? ? 8A C3
+BlipList = 4C 8D 05 ? ? ? ? 0F B7 C1
+CamGameplayDirector = 4C 8B 35 ? ? ? ? 33 FF 32 DB
+PlayerName = 48 8B 15 ? ? ? ? 48 C1 E1
+Bullet instance = F3 41 0F 10 19 F3 41 0F 10 41 04
+SetPedConfigFlag = 31 83 ?? ?? ?? ?? 8B 83 ?? ?? ?? ?? 83 E0
+Armor = F3 0F 10 8B ? ? ? ? F3 0F 2C D1
+HasEntityClearLosEntity = 57 48 83 EC 60 48 8B 01 41 8B E8 48 8B F2 48 8B F9 33 DB
+ShootSingleBulletBetweenCoords = e9 ? ? ? ? 48 8b 45 ? 0f b6 00 0f b6 c0 89 45 ? 51 8b 4d ? d3 45 ? 59 8b 45 ? 03 45 ? 89 45 ? 83 45 ? ? 8b 45 ? 83 c8 ? 0f af 45 ? 83 e0 ? 89 45 ? 48 83 45 ? ? 8b 45 ? 85 c0 0f 8f ? ? ? ? e9 ? ? ? ? e8 ? ? ? ? 90 e9 ? ? ? ? cc e9
+PlayerAimingAt = 48 8B 0D ? ? ? ? 48 85 C9 74 0C 48 8D 15 ? ? ? ? E8 ? ? ? ? 48 89 1D
+Swapchain = 48 8B 0D ? ? ? ? 48 8B 01 44 8D 43 01 33 D2 FF 50 40 8B C8
+GetPedLastWeaponImpactCoord = 48 89 5C 24 ? 57 48 83 EC ? 33 DB 48 8B FA 48 89 5A
+GetFinalRenderedCamCoord = 40 53 48 83 EC ? 48 8B D9 E8 ? ? ? ? 8B 10
+GetCurrentPedWeapon = 40 53 48 83 EC ? 48 8B DA E8 ? ? ? ? 33 C9
+NetworkGetNetworkIdFromEntity = 48 89 5C 24 ? 57 48 83 EC ? E8 ? ? ? ? 33 DB 48 8B F8 48 85 C0 74 ? 48 8B C8 E8 ? ? ? ? 84 C0
+AttachentityToEntity = 48 8B C4 48 89 58 ? 48 89 68 ? 48 89 70 ? 57 41 54 41 55 41 56 41 57 48 83 EC ? 0F 29 70 ? 45 0F B7 E1
+SetPedInVehicle = 48 8B C4 44 89 48 ? 44 89 40 ? 48 89 50 ? 48 89 48 ? 55 53 56 57 41 54 41 55 41 56 41 57 48 8D A8 ? ? ? ? 48 81 EC ? ? ? ? 83 BA
+TaskWarpPedInToVehicle = 48 8B C4 48 89 58 ? 48 89 68 ? 48 89 70 ? 48 89 78 ? 41 56 48 83 EC ? 44 8B F1 8B CA 41 8B D8
+PlayerStamina = F3 0F 58 F2 0F 2F F0 F3 0F
+WeaponDefenseModifier = F3 0F 11 80 ? ? ? ? F3 0F 10 87 ? ? ? ? 48
+VehicleDamageModifier = 74 ? 48 8B 80 ? ? ? ? F3 44 0F 59 88
+VehicleDefense = F6 C1 ? 75 ? 48 8B 83 ? ? ? ? 48 8B 4E
+WeaponDefenseModifier2 = F3 0F 11 ? ? ? ? ? 8A 87 ? ? ? ? C0 E0
+MeleeWeaponDamageModifier = 48 8B 85 ? ? ? ? 0F 2F CE 77 ? 0F 28 CE 49
+MeleeWeaponDefenseModifier = 45 84 ? ? 74 ? 48 8B 83
+BoneMask = 48 89 5C 24 ?? 48 89 6C 24 ?? 48 89 74 24 ?? 57 48 83 EC 60 48 8B 01 41 8B E8 48 8B F2 48 8B F9 33 DB
+PlayerInfo = 48 8B 80 ? ? ? ? 48 85 C0 74 ? 39 90
+Handling = 48 8B 83 ? ? ? ? 8B D5 48 89 44 24 ? 4C 89 74 24
+Recoil = F3 0F 10 B0 ? ? ? ? 49 8B 87
+NoSpread = F3 41 0F 10 B0 ? ? ? ? 48 8B CA
+Triggerbot = 48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? 48 8B 0D ?? ?? ?? ?? 48 85 C9 74 05 E8 ?? ?? ?? ?? 8A CB
